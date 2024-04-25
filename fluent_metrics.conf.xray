@@ -334,6 +334,9 @@
 <match jfrog.xray.**>
   @type loki
   url "#{ENV['LOKI_URL']}"
+  username "#{ENV['LOKI_USERNAME']}"
+  password "#{ENV['LOKI_PASSWORD']}"
+  tenant "#{ENV['LOKI_TENANT']}"
   flush_interval 1s
   flush_at_shutdown true
   buffer_chunk_limit 1m
